@@ -1,4 +1,15 @@
 const numeroSenha = document.querySelector('.parametro-senha__texto')
+const CampoSenha = document.querySelector('#campo-senha')
+
+CampoSenha.value = 'rhaenyra, herdeira legitima.'
+
+let letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+let letrasMinusculas = 'abcdefghijklmnopqrstuvwxyz'
+
+let numeros = '123456789'
+
+
 
 tamanhoSenha = 8;
 numeroSenha.textContent = tamanhoSenha;
