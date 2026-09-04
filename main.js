@@ -14,6 +14,15 @@ let simbolos = '@#$&*!-_'
 tamanhoSenha = 8;
 numeroSenha.textContent = tamanhoSenha;
 
+const checkbox = document.querySelectorAll('.checkbox')
+
+for(let i = 0; i < checkbox.length; i++){
+   checkbox[i].onclick = geraSenha;
+}
+//checkbox[0] = maiusculas
+//checkbox[1] = minusculas
+//
+
 const botoes = document.querySelectorAll(".parametro-senha__botao")
 
 botoes[0].onclick = diminuir;
