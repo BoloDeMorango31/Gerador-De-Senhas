@@ -1,6 +1,9 @@
 const numeroSenha = document.querySelector('.parametro-senha__texto')
 const CampoSenha = document.querySelector('#campo-senha')
 
+const forcaSenha = document.querySelector(".forca")
+
+
 CampoSenha.value = 'Senha.'
 
 let letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -21,7 +24,8 @@ for(let i = 0; i < checkbox.length; i++){
 }
 //checkbox[0] = maiusculas
 //checkbox[1] = minusculas
-//
+//checkbox[2] = numeros
+//checkbox[3] = simbolos
 
 const botoes = document.querySelectorAll(".parametro-senha__botao")
 
@@ -52,4 +56,13 @@ function geraSenha(){
       senha = senha + letrasMaiusculas[numeroAleatorio]
    }
    CampoSenha.value = senha;
+   classficarSenha()
+}
+
+
+function classficarSenha(){
+
+   if(tamanhosenha > 11){
+      forcaSenha.classList.add('forte')
+   }
 }
